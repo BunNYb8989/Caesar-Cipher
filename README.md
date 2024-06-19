@@ -3,7 +3,7 @@
 <p align="center">
 <b>Root User</b>
 <br/>
-  <img src="Classical encryption Technique.png"/>
+  <img src=""/>
 <br/>
 <br/>
 </p>
