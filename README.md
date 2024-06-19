@@ -75,3 +75,14 @@ O -> L
 O -> L
 
 R -> O
+
+
+
+# algorithm
+<p align="center">
+<b>Root User</b>
+<br/>
+  <img src="chiper algorithm.png"/>
+<br/>
+<br/>
+</p>
