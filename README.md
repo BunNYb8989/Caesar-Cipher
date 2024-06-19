@@ -27,6 +27,14 @@ Decryption Process:
 To decrypt the ciphertext (the encrypted message), shift each letter in the ciphertext by the opposite of the key used for encryption.
 For example, if the key is 3, each letter is shifted back by 3 positions (D becomes A, E becomes B, etc.).
 
+<p align="center">
+<b>Root User</b>
+<br/>
+  <img src=""/>
+<br/>
+<br/>
+</p>
+
 # Example
 Encryption:
 
