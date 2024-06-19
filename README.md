@@ -26,26 +26,44 @@ Decryption Process:
 
 To decrypt the ciphertext (the encrypted message), shift each letter in the ciphertext by the opposite of the key used for encryption.
 For example, if the key is 3, each letter is shifted back by 3 positions (D becomes A, E becomes B, etc.).
-Example
+
+# Example
 Encryption:
+
 Plaintext: HELLO
+
 Key: 3
+
 Ciphertext: KHOOR
+
 Here’s how each letter is shifted:
 
 H -> K
+
 E -> H
+
 L -> O
+
 L -> O
+
 O -> R
+
 Decryption:
+
 Ciphertext: KHOOR
+
 Key: 3
+
 Plaintext: HELLO
+
 Shifting each letter back by 3:
 
 K -> H
+
 H -> E
+
 O -> L
+
 O -> L
+
 R -> O
