@@ -86,4 +86,9 @@ R -> O
 <br/>
 <br/>
 </p>
-in the image the plain text is encrypted by the mod 26 & +3key
+
+in the image the plain text is encrypted by the mod 26 & +3key & the decryption is done by C - k
+
+C = E (p,k) mod 26 = (p+k) mod 26  ENCRYPTION
+
+p = D (C,k) mod 26 = (C-k) mod 26  DECRYPTION
