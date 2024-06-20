@@ -92,3 +92,42 @@ in the image the plain text is encrypted by the mod 26 & +3key & the decryption 
 C = E (p,k) mod 26 = (p+k) mod 26  ENCRYPTION
 
 p = D (C,k) mod 26 = (C-k) mod 26  DECRYPTION
+
+# HERE IS THE CODE 
+
+```
+def encrypt(text, shift):
+    encrypted_text = ""
+    for char in text:
+        if char.isalpha():
+            shift_base = ord('A') if char.isupper() else ord('a')
+            encrypted_text += chr((ord(char) - shift_base + shift) % 26 + shift_base)
+        else:
+            encrypted_text += char
+    return encrypted_text
+
+def decrypt(text, shift):
+    return encrypt(text, -shift)
+
+def main():
+    print("Caesar Cipher Program")
+    choice = input("Do you want to (E)ncrypt or (D)ecrypt?: ").strip().upper()
+
+    if choice not in ['E', 'D']:
+        print("Invalid choice. Please choose 'E' for Encrypt or 'D' for Decrypt.")
+        return
+
+    message = input("Enter the message: ").strip()
+    shift = int(input("Enter the shift value: ").strip())
+
+    if choice == 'E':
+        result = encrypt(message, shift)
+        print(f"Encrypted message: {result}")
+    else:
+        result = decrypt(message, shift)
+        print(f"Decrypted message: {result}")
+
+if __name__ == "__main__":
+    main()
+
+```
